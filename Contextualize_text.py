@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Use your API key securely (e.g., with environment variables in production)
 client = Groq(api_key = os.getenv("GROQ_API_KEY"))
 
 nlp = spacy.load("en_core_web_sm")
@@ -41,8 +40,8 @@ def define_numericals(num, context):
     answer = response.choices[0].message.content
     return answer
 
-# Example usage
-text = "The price is $100, and I bought 3 items on 2024-05-08.  The car's top speed is 200 km/h."
+# Example
+text = "It's a sunny day outside. The temperature is around 30. The price is $100, and I bought 3 items on 10.05.2025. The car's top speed is 200 km/h."
 answer_texts = []
 contexts = extract_numerical_context(text)
 for num, context in contexts:
@@ -50,7 +49,8 @@ for num, context in contexts:
     answer_text = f"Number: {num}, Context: {context}, Answer: {answer}"
     try:
         with open("answer.txt", "a") as f:
-            f.write(f"{answer_text}\n")  # Write each item on a new line
+            f.write(f"{answer_text}\n")
+            f.close()
         print(f"Numerical contexts saved to answer.txt.")
     except Exception as e:
         print(f"Error saving to file: {e}")
