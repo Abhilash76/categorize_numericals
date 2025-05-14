@@ -1,8 +1,18 @@
-Number: 100, Context: price is $ 100 , and, Answer: price is one hundred dollars
-Number: 3, Context: and I bought 3 items on, Answer: bought three items
-Number: 10.05.2025, Context: 3 items on 10.05.2025 . The, Answer: Given the input: number="10.05.2025" and context="3 items on 10.05.2025 . The"
+Number: 100, Context: 30C. The price is $ 100 , and I bought, Answer: Here is the natural language representation suitable for speech:
 
-The textual representation would be: "tenth of May, two thousand twenty-five"
-Number: 200, Context: top speed is 200 km /, Answer: Given the number "200" and its surrounding context "top speed is 200 km /", I would generate the following natural language representation:
+price is one hundred dollars
+Number: 3, Context: 100 , and I bought 3 items on 10.05.2025 ., Answer: Here is the natural language representation suitable for speech:
 
-"top speed is two hundred kilometers per hour"
+"bought three items"
+Number: 10.05.2025, Context: I bought 3 items on 10.05.2025 . The car 's, Answer: Given the input "10.05.2025" and its surrounding context "I bought 3 items on 10.05.2025 . The car's", I would generate a natural language representation as follows:
+
+"I bought 3 items on Tenth of May, two thousand twenty-five"
+
+The number "10.05.2025" is interpreted as a date, and it is converted into a textual representation using the month and day numbers. The date is also adjusted to have a more formal and speech-friendly tone.
+
+Please note that this is just one possible representation, and the actual output may vary depending on the specific context, cultural conventions, and personal preferences.
+Number: 200, Context: car 's top speed is 200 km / h., Answer: Given the input number "200" and context "car 's top speed is 200 km / h.",
+
+The natural language representation that is suitable for speech is:
+
+"car's top speed is two hundred kilometers per hour"

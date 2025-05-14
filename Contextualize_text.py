@@ -20,8 +20,8 @@ def extract_numerical_context(text: str, nlp_model = nlp) -> list:
     numerical_contexts = []
     for token in doc:
         if token.like_num:
-            start_index = max(0, token.i - 3)
-            end_index = min(len(doc), token.i + 3)
+            start_index = max(0, token.i - 5)
+            end_index = min(len(doc), token.i + 5)
             context = " ".join(
                 [doc[i].text for i in range(start_index, end_index)]
             )
