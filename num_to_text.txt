@@ -1,0 +1,4 @@
+Number: 100, Context: 30C. The price is $ 100 , and I bought, Answer: "The price is one hundred dollars"
+Number: 3, Context: 100 , and I bought 3 items on 10.05.2025 ., Answer: I bought three items on Tenth of May, two thousand and twenty-five.
+Number: 10.05.2025, Context: I bought 3 items on 10.05.2025 . The car 's, Answer: I bought three items on Tenth of May, two thousand and twenty-five. The car's
+Number: 200, Context: car 's top speed is 200 km / h., Answer: Given the number "200" and its surrounding context "car 's top speed is 200 km / h.", I generate the natural language representation as: "car's top speed is two hundred kilometers per hour."
